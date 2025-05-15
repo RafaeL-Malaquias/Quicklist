@@ -122,6 +122,8 @@ ul {
 
         & label {
             padding-left: 12px;
+            font: var(--font-paragraph);
+            color: var(--content-secondary);
         }
 
         a {
