@@ -35,8 +35,8 @@ body {
 }
 
 main {
-    width: 900px;
-    margin: 0 auto;
+    display: grid;
+    place-content: center;
 
 }
 
