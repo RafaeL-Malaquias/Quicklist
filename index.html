@@ -40,7 +40,7 @@
 
         <ul>
             <li>
-                <input type="checkbox" id="item1">
+                <input type="checkbox" id="item1" required >
                 <label class="label" for="item1">Arroz</label>
                 <a href="#"><i class="ph ph-trash"></i></a>
             </li>
@@ -56,32 +56,39 @@
             </li>
         </ul>
 
-        <div id="popup-success">
+
+
+
+        
+    <div class="alert-popup">
+        <div id="alert-success">
             <i class="ph ph-check-circle"></i>
             <span>O item foi adicionado</span>
               <a href="#"><i class="ph ph-trash"></i></a>
         </div>
 
-        <div id="error">
+        <div id="alert">
             <i class="ph ph-warning"></i>
             <span>O item foi removido da lista</span>
             <i class="ph ph-x"></i>
         </div>
 
-        <div id="error item-vazio">
+        <div id="alert">
             <i class="ph ph-warning"></i>
             <span>Você não pode adicionar um item vazio!</span>
             <i class="ph ph-x"></i>
         </div>
 
 
-        <div id="error item-existente">
+        <div id="alert">
             <i class="ph ph-warning"></i>
             <span>Esse item já existe na lista!</span>
             <i class="ph ph-x"></i>
         </div>
     </div>
-    </main>
+</div>
+</main>
+
 
     <footer>
         copyright &copy; 2023 - Quick List
