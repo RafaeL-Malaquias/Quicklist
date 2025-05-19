@@ -41,17 +41,17 @@
         <ul id="ul-list">
             <li>
                 <input type="checkbox" id="checkBox" required >
-                <label id="label" class="label" for="item1">Arroz</label>
+                <label id="label" class="label" for="checkBox">Arroz</label>
                 <a href="#"><i class="ph ph-trash"></i></a>
             </li>
             <li>
                 <input type="checkbox" id="checkBox">
-                <label for="item2">Feijão</label>
+                <label for="checkBox">Feijão</label>
                   <a href="#"><i class="ph ph-trash"></i></a>
             </li>
             <li>
                 <input type="checkbox" id="checkBox">
-                <label id="label" for="item3">Macarrão</label>
+                <label id="label" for="checkBox">Macarrão</label>
                   <a href="#"><i class="ph ph-trash"></i></a>
             </li>
         </ul>
@@ -60,12 +60,14 @@
 
 
         
-    <div class="alert-popup">
+    <div class="alert-popup" hidden >
+     
         <div id="alert-box">
             <i class="ph ph-check-circle"></i>
-            <span>O item foi adicionado</span>
+            <span class="alert-span"></span>
               <a href="#"><i class="ph ph-trash"></i></a>
         </div>
+   
 
         <div id="alert">
             <i class="ph ph-warning"></i>

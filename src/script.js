@@ -8,7 +8,10 @@ const ulList = document.querySelector("#ul-list");
 
 // box popup  (caixa de alerta)
 
-const alertBox = document.querySelector("#alert-box");
+const alertBox = document.querySelector("#alert-popup");
+
+const alertspan = document.querySelector(".alert-span");
+alertspan.hidden = true;
 
 
 
@@ -19,14 +22,14 @@ form.addEventListener("submit", (event) => {
 
   // criar elemento
 const li = document.createElement("li");
-const chackBox = document.createElement("checkBox");
+const chackBox = document.createElement("input");
 chackBox.type = "checkbox";
- const itemId = `item-${Date.now()}`;
-chackBox.id = itemId;
+ const checkBox = `item-${Date.now()}`;
+chackBox.id = checkBox;
 chackBox.required = true;
 
 const label = document.createElement("label");
-label.setAttribute("for", itemId);
+label.setAttribute("for", checkBox);
 label.classList.add("label");
 label.textContent =  input.value;
 
