@@ -29,29 +29,29 @@
         </header>
 
     <div class="container">
-        <form action="">
+        <form id="form" action="">
             <div class="input-group">
-                <input type="text" placeholder="Adicione um novo item" id="item" required>
+                <input type="text" placeholder="Adicione um novo item" id="input-value" required>
                 <button class="btn" type="submit" id="add-item">
                     Adicionar item
                 </button>
             </div>
         </form>
 
-        <ul>
+        <ul id="ul-list">
             <li>
-                <input type="checkbox" id="item1" required >
-                <label class="label" for="item1">Arroz</label>
+                <input type="checkbox" id="checkBox" required >
+                <label id="label" class="label" for="item1">Arroz</label>
                 <a href="#"><i class="ph ph-trash"></i></a>
             </li>
             <li>
-                <input type="checkbox" id="item2">
+                <input type="checkbox" id="checkBox">
                 <label for="item2">Feijão</label>
                   <a href="#"><i class="ph ph-trash"></i></a>
             </li>
             <li>
-                <input type="checkbox" id="item3">
-                <label for="item3">Macarrão</label>
+                <input type="checkbox" id="checkBox">
+                <label id="label" for="item3">Macarrão</label>
                   <a href="#"><i class="ph ph-trash"></i></a>
             </li>
         </ul>
@@ -61,7 +61,7 @@
 
         
     <div class="alert-popup">
-        <div id="alert-success">
+        <div id="alert-box">
             <i class="ph ph-check-circle"></i>
             <span>O item foi adicionado</span>
               <a href="#"><i class="ph ph-trash"></i></a>
@@ -72,26 +72,12 @@
             <span>O item foi removido da lista</span>
             <i class="ph ph-x"></i>
         </div>
-
-        <div id="alert">
-            <i class="ph ph-warning"></i>
-            <span>Você não pode adicionar um item vazio!</span>
-            <i class="ph ph-x"></i>
-        </div>
-
-
-        <div id="alert">
-            <i class="ph ph-warning"></i>
-            <span>Esse item já existe na lista!</span>
-            <i class="ph ph-x"></i>
-        </div>
     </div>
 </div>
 </main>
 
 
-    <footer>
-        copyright &copy; 2023 - Quick List
-    </footer>
+
+    <script src="src/script.js"></script>
 </body>
 </html>
