@@ -8,10 +8,8 @@ const ulList = document.querySelector("#ul-list");
 
 // box popup  (caixa de alerta)
 
-const alertBox = document.querySelector("#alert-popup");
-
 const alertspan = document.querySelector(".alert-span");
-alertspan.hidden = true;
+const alertPopup = document.querySelector(".alert-popup");
 
 
 
@@ -40,13 +38,34 @@ const icons = document.createElement("i");
 icons.className = "ph ph-trash"
 
 
-
 // Adiciona o valor do input ao elemento li
 a.appendChild(icons);
   li.append( chackBox, label, a);
   ulList.appendChild(li);
 
+  // Limpa o campo de entrada
+  input.value = "";
+
+  showAlert("Item adicionado com sucesso", "#4BB543");
+
 })
+
+// função para alert de item adicionado
+
+function alertAdd() {
+  alertPopup.hidden = false;
+
+  alertspan.textContent = "O texo foi adicionado com sucesso ";
+  alertPopup.style.background = "#4BB543";
+  alertPopup.style.color = "#fff";
+
+  setTimeout(() => {
+    alertPopup.hidden = true;
+  }, 5000);
+
+}
+
+
 
 
 // função para remover o elemento li
@@ -54,6 +73,26 @@ ulList.addEventListener("click", (event) => {
   if (event.target.tagName === "I") {
     const li = event.target.closest("li");
     li.remove();
+
+
+  alertPopup.hidden = false;
+
+  alertspan.textContent = "O texo foi removido com sucesso ";
+  alertPopup.style.background = "#C93847";
+  alertPopup.style.color = "#fff";
+
+
+  /* usando metodo de classe, addicionar e remover
+  // mostrar alert
+  alertPopup.classList.add("show");
+  alertPopup.classList.remove("hide");
+
+  */
+
+  setTimeout(() => {
+  alertPopup.hidden = true;
+  }, 5000);
   }
 
 });
+
