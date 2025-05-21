@@ -18,6 +18,14 @@ const alertPopup = document.querySelector(".alert-popup");
 form.addEventListener("submit", (event) => {
   event.preventDefault(); // Evita recarregar a página
 
+   const valor = input.value.trim();
+   if (!valor) return;
+
+    if (itemJaExiste(valor)) {
+    showAlert("Item já existe na lista", "#FFD700", "#000");
+    return;
+  }
+
   // criar elemento
 const li = document.createElement("li");
 const chackBox = document.createElement("input");
@@ -79,7 +87,14 @@ ulList.addEventListener("click", (event) => {
   // função para marcar o item como concluído
     showAlert("O texto foi removido com sucesso", "#C93847", "#fff");
 
-
   }
 });
+
+
+// função para verificar se já existe um item na lista
+
+function itemJaExiste(valor) {
+  const items = ulList.querySelectorAll("label");
+  return Array.from(items).some(item => item.textContent.trim().toLowerCase() === valor.trim().toLowerCase());
+}
 
