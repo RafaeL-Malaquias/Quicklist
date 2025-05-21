@@ -46,25 +46,26 @@ a.appendChild(icons);
   // Limpa o campo de entrada
   input.value = "";
 
-  showAlert("Item adicionado com sucesso", "#4BB543");
+  // chamando a funçao alerta
+    showAlert("Item adicionado com sucesso", "#4BB543", "#fff");
 
 })
 
-// função para alert de item adicionado
+// função  de alerta
 
-function alertAdd() {
-  alertPopup.hidden = false;
+function showAlert(message, background = "#4BB543", color = "#fff")  {
+  alertspan.textContent = message;
+  alertPopup.style.background = background;
+  alertPopup.style.color = color;
 
-  alertspan.textContent = "O texo foi adicionado com sucesso ";
-  alertPopup.style.background = "#4BB543";
-  alertPopup.style.color = "#fff";
+  alertPopup.classList.add("show");
+  alertPopup.classList.remove("hide");
 
   setTimeout(() => {
-    alertPopup.hidden = true;
+    alertPopup.classList.remove("show");
+    alertPopup.classList.add("hide");
   }, 5000);
-
 }
-
 
 
 
@@ -75,24 +76,10 @@ ulList.addEventListener("click", (event) => {
     li.remove();
 
 
-  alertPopup.hidden = false;
-
-  alertspan.textContent = "O texo foi removido com sucesso ";
-  alertPopup.style.background = "#C93847";
-  alertPopup.style.color = "#fff";
+  // função para marcar o item como concluído
+    showAlert("O texto foi removido com sucesso", "#C93847", "#fff");
 
 
-  /* usando metodo de classe, addicionar e remover
-  // mostrar alert
-  alertPopup.classList.add("show");
-  alertPopup.classList.remove("hide");
-
-  */
-
-  setTimeout(() => {
-  alertPopup.hidden = true;
-  }, 5000);
   }
-
 });
 
