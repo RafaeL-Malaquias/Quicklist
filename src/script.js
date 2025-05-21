@@ -65,14 +65,16 @@ function showAlert(message, background = "#4BB543", color = "#fff")  {
   alertspan.textContent = message;
   alertPopup.style.background = background;
   alertPopup.style.color = color;
+  alertPopup.style.width = "630px";
 
   alertPopup.classList.add("show");
   alertPopup.classList.remove("hide");
-
+ /*
   setTimeout(() => {
     alertPopup.classList.remove("show");
     alertPopup.classList.add("hide");
   }, 5000);
+  */
 }
 
 

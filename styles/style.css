@@ -197,15 +197,38 @@ ul {
 
 
  .alert-popup {
+
   opacity: 0;
   transition: 0.4s;
   pointer-events: none;
-  position: fixed;
-  top: 20px;
-  right: 20px;
   padding: 12px 18px;
   border-radius: 8px;
   z-index: 1000;
+
+  max-width: 630px;
+   height: 49px;
+    border-radius: 8px;
+    position: relative;
+
+
+  & #alert-box {
+  
+    display: flex; 
+    gap: 5px;
+
+    
+    a {
+        font-size: 20px;
+        display: flex;
+
+        & .ph-trash {
+            position: absolute;
+            right: 12px;
+        }
+    }
+
+   
+  }
 }
 
 .alert-popup.show {
