@@ -215,7 +215,7 @@ ul {
   
     display: flex; 
     gap: 5px;
-
+    margin-top: 4px;
     
     a {
         font-size: 20px;
@@ -240,3 +240,5 @@ ul {
   opacity: 0;
   pointer-events: none;
 }
+
+

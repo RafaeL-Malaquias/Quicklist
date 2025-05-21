@@ -69,12 +69,12 @@ function showAlert(message, background = "#4BB543", color = "#fff")  {
 
   alertPopup.classList.add("show");
   alertPopup.classList.remove("hide");
- /*
+ 
   setTimeout(() => {
     alertPopup.classList.remove("show");
     alertPopup.classList.add("hide");
   }, 5000);
-  */
+  
 }
 
 
