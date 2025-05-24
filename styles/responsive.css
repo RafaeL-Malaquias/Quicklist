@@ -3,6 +3,7 @@
 @media (max-width: 390px) {
 
     body {
+        display: flex;
         padding: 32px;
     }
   
@@ -10,8 +11,6 @@
         display: none;
     }
     main {
-        display: flex;
-        flex-direction: column;
 
     }
 
@@ -57,7 +56,7 @@
         width: 290px;
         margin-bottom: 16px;
 
-        
+        position: relative;
         & a {
             display: flex;
             position: absolute;
