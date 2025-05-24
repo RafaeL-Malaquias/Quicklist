@@ -86,7 +86,7 @@ ulList.addEventListener("click", (event) => {
 
 
   // função para marcar o item como concluído
-    showAlert("O texto foi removido com sucesso", "#C93847", "#fff");
+    showAlert("O texto foi removido da lista", "#C93847", "#fff");
 
   }
 });

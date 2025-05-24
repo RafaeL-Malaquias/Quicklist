@@ -69,10 +69,18 @@
 
 
    &  .alert-popup  {
-        background-color: red;
-        width: 290px;
 
-        margin-top: 40px;
+        display: flex;
+        width: 303px;
+        padding: 12px;
+        align-items: flex-start;
+        gap: var(--spacing-spacing-2, 8px);
+       
+        opacity: 1;
+     
+        font-size: 16px;
+
+
     }
 
 
