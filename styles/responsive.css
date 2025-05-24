@@ -1,0 +1,82 @@
+
+
+@media (max-width: 390px) {
+
+    body {
+        padding: 32px;
+    }
+  
+    .logo {
+        display: none;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    
+    .container {
+        /*
+        display: flex;
+        flex-direction: column;
+        */
+
+     & #form {
+
+
+        & .input-group {
+            width: 290px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        & .btn {
+            width: 290px;
+            
+        }
+
+
+     
+
+        
+        & .alert-popup {
+
+            margin: 0;
+            padding: 16px;
+        }
+    }
+    }
+
+
+    & #ul-list  {
+      
+
+    & li {
+        width: 290px;
+        margin-bottom: 16px;
+
+        
+        & a {
+            display: flex;
+            position: absolute;
+            right: 12px;
+            
+        }
+
+    }
+    }
+
+
+   &  .alert-popup  {
+        background-color: red;
+        width: 290px;
+
+        margin-top: 40px;
+    }
+
+
+
+    /**/
+}
