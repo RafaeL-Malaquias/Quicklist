@@ -131,8 +131,8 @@ ul {
         & label::before {
            content: "";
             display: inline-flex;
-            width: 12px;
-            height: 12px;
+            width: 16px;
+            height: 16px;
             background-color: var(--bg-secondary-color);
             border-radius: 8px;
             border: 2px solid var(--border-color);
@@ -141,17 +141,29 @@ ul {
             cursor: pointer;
         }
         & input:checked + label::before {
-            background-color: var(--color-brand);
-            border: 2px solid var(--color-brand);
+
         }
 
+        & input:checked + label::before{
+            background-image: url(/assets/cheacked.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+
+            background-color: var(--color-brand);
+            border: 2px solid var(--color-brand);
+
+        }
+        
+
         & label {
+            display: flex;
             padding-left: 10px;
             font: var(--font-paragraph);
             color: var(--content-secondary);
         }
 
         a {
+            display: flex;
             position: absolute;
             right: 12px;
      
