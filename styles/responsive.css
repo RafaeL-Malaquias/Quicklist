@@ -10,9 +10,7 @@
     .logo {
         display: none;
     }
-    main {
 
-    }
 
 
     
@@ -38,19 +36,12 @@
 
 
      
-
-        
-        & .alert-popup {
-
-            margin: 0;
-            padding: 16px;
-        }
     }
     }
 
-
+   /* ul e listas*/
     & #ul-list  {
-      
+        gap: 12px;
 
     & li {
         width: 290px;
@@ -64,14 +55,16 @@
             
         }
 
-    }
-    }
+      }
+}
 
+
+    /* div de alerta */
 
    &  .alert-popup  {
 
         display: flex;
-        width: 303px;
+        width: 290px;
         padding: 12px;
         align-items: flex-start;
         gap: var(--spacing-spacing-2, 8px);
@@ -80,10 +73,8 @@
      
         font-size: 16px;
 
+        margin-top: 30px;
 
     }
-
-
-
     /**/
 }
