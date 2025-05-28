@@ -35,7 +35,7 @@ header {
 
 .container {
 
-    width:  630px;
+    max-width:  630px;
 
 
     form {

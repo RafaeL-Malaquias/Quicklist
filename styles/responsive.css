@@ -1,10 +1,54 @@
 
 
-@media (max-width: 390px) {
+
+
+/* responsivo 630 */
+
+@media (max-width: 600px) {
+    main {
+        padding: 32px 34px
+    }
+ 
+    .logo {
+        max-width: 180px;
+        margin-block: 24px;
+    }
+
+
+   .container {
+
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+
+        & #add-item {
+            width: 100%;
+        }
+    }
+
+    }
+
+
+    ul {
+        margin-top: 24px;
+        gap: 8px;
+    }
+
+    }
+    ul li a {
+
+        right: 5px;
+    }
+
+
+
+
+
+@media (max-width: 340px) {
 
     body {
         display: flex;
-        padding: 32px;
+        padding: 15px;
     }
   
     .logo {

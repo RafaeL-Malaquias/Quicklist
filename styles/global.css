@@ -35,8 +35,13 @@ body {
 }
 
 main {
+
+    max-width: 630px;
+    margin: 0 auto;
+    /*
     display: grid;
     place-content: center;
+    */
 
 }
 
